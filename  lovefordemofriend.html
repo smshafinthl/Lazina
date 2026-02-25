@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>পদার্থবিজ্ঞান: সম্পূর্ণ সূত্রাবলী - Lazina</title>
+    <!-- MathJax for Formulas -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #004d40;    /* Deep Teal */
+            --accent: #c2185b;     /* Pink/Rose */
+            --bg: #f4f7f6;
+            --card-bg: #ffffff;
+            --text: #263238;
+        }
+
+        body {
+            font-family: 'Hind Siliguri', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: var(--card-bg);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            border-top: 8px solid var(--primary);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px dashed #cfd8dc;
+            padding-bottom: 25px;
+            margin-bottom: 40px;
+        }
+
+        h1 { margin: 0; color: var(--primary); font-size: 2.4rem; }
+        
+        .gift-badge { 
+            background: var(--accent); color: white; 
+            padding: 6px 20px; border-radius: 50px; 
+            display: inline-block; margin-top: 10px; 
+            font-weight: bold; font-size: 1rem;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+        }
+
+        .chapter-header {
+            background-color: #e0f2f1;
+            color: #00695c;
+            padding: 12px 20px;
+            margin-top: 50px;
+            border-radius: 8px;
+            font-size: 1.4rem;
+            font-weight: 700;
+            border-left: 6px solid var(--accent);
+        }
+
+        .formula-card {
+            border: 1px solid #eceff1;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            background: #fff;
+            transition: transform 0.2s;
+        }
+
+        .formula-card:hover {
+            border-color: #80cbc4;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .f-title {
+            font-weight: 700;
+            color: #d81b60;
+            font-size: 1.15rem;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        /* MathJax Container */
+        .math-box {
+            font-size: 1.25rem;
+            background: #f1f8e9;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 10px 0;
+            color: #000;
+            overflow-x: auto;
+        }
+
+        /* Explanations as simple text */
+        .desc {
+            font-size: 1rem;
+            color: #546e7a;
+            background-color: #fafafa;
+            padding: 10px 15px;
+            border-radius: 6px;
+            border-left: 3px solid #b0bec5;
+        }
+        
+        /* Stylized Variable highlight */
+        .v {
+            font-family: 'Times New Roman', serif;
+            font-style: italic;
+            font-weight: bold;
+            color: #004d40;
+        }
+
+        /* Special Footer Style */
+        footer {
+            text-align: center;
+            margin-top: 70px;
+            padding-top: 30px;
+            border-top: 1px solid #eee;
+        }
+
+        .maker-credit {
+            font-size: 1.2rem;
+            color: #455a64;
+            font-weight: 600;
+            background-color: #fce4ec;
+            display: inline-block;
+            padding: 15px 30px;
+            border-radius: 50px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        .highlight-name {
+            color: #c2185b;
+            font-weight: 700;
+        }
+
+        .heart-beat {
+            display: inline-block;
+            color: #e91e63;
+            animation: beat 1s infinite alternate;
+        }
+
+        @keyframes beat {
+            to { transform: scale(1.3); }
+        }
+
+        @media print {
+            body { background: white; padding: 0; }
+            .container { box-shadow: none; border: none; width: 100%; padding: 10px; }
+            .math-box { background: none; border: 1px solid #ddd; }
+            .chapter-header { break-after: avoid; }
+            .formula-card { break-inside: avoid; }
+            .maker-credit { background: none; border: 1px solid #eee; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>পদার্থবিজ্ঞান: সকল সূত্রাবলী</h1>
+        <div class="gift-badge">Gift for Lazina</div>
+    </header>
+
+    <!-- অধ্যায় ১ -->
+    <div class="chapter-header">১. ভৌত রাশি ও পরিমাপ</div>
+    
+    <div class="formula-card">
+        <span class="f-title">ভার্নিয়ার ধ্রুবক ও ক্যালিপার্স</span>
+        <div class="math-box">
+            $$VC = \frac{s}{n}, \quad L = M + (V \times VC)$$
+        </div>
+        <div class="desc">
+            ব্যাখ্যা: <span class="v">s</span> = প্রধান স্কেলের ১ ভাগের মান, <span class="v">n</span> = ভার্নিয়ারের ভাগ সংখ্যা। <span class="v">L</span> = দৈর্ঘ্য।
+        </div>
+    </div>
+
+    <div class="formula-card">
+        <span class="f-title">স্ক্রুগজ: নূনাঙ্ক ও ব্যাস</span>
+        <div class="math-box">
+            $$LC = \frac{P}{n}, \quad d = L + (C \times LC)$$
+        </div>
+        <div class="desc">
+            ব্যাখ্যা: <span class="v">P</span> = পিচ। <span class="v">d</span> = ব্যাস।
+        </div>
+    </div>
+
+    <div class="formula-card">
+        <span class="f-title">ঘনত্ব ও গোলকের ক্ষেত্রফল</span>
+        <div class="math-box">
+            $$\rho = \frac{m}{V}, \quad A = 4\pi r^2$$
+        </div>
+        <div class="desc">
+            ব্যাখ্যা: <span class="v">ρ</span> = ঘনত্ব, <span class="v">m</span> = ভর, <span class="v">V</span> = আয়তন। <span class="v">A</span> = গোলকের পৃষ্ঠতলের ক্ষেত্রফল।
+        </div>
+    </div>
+
+    <div class="formula-card">
+        <span class="f-title">আপেক্ষিক ত্রুটি</span>
+        <div class="math-box">
+            $$\text{ত্রুটি} = \frac{\text{চূড়ান্ত ত্রুটি}}{\text{পরিমাপকৃত মান}} \times 100\%$$
+        </div>
+    </div>
+
+    <!-- অধ্যায় ২ -->
+    <div class="chapter-header">২. গতি (Motion)</div>
+
+    <div class="formula-card">
+        <span class="f-title">গতির মূল সমীকরণসমূহ</span>
+        <div class="math-box">
+            $$v = u + at, \quad s = ut + \frac{1}{2}at^2$$
+            $$v^2 = u^2 + 2as$$
+        </div>
+        <div class="desc">
+            পড়ন্ত বস্তুর ক্ষেত্রে <span class="v">a</span> এর বদলে <span class="v">g</span> এবং <span class="v">s</span> এর বদলে <span class="v">h</span> বসবে।
+        </div>
+    </div>
+
+    <div class="formula-card">
+        <span class="f-title">n-তম সেকেন্ডে অতিক্রান্ত দূরত্ব</span>
+        <div class="math-box">
+            $$s_n = u + \frac{1}{2}a(2n - 1)$$
+        </div>
+        <div class="desc">
+            ব্যাখ্যা: একটি নির্দিষ্ট সেকেন্ডে (যেমন ৫ম) কতটুকু দূরত্ব অতিক্রম করল তা বের করতে।
+        </div>
+    </div>
+
+    <div class="formula-card">
+        <span class="f-title">নিক্ষিপ্ত বস্তু (সর্বোচ্চ উচ্চতা ও বিচরণকাল)</span>
+        <div class="math-box">
+            $$H = \frac{u^2}{2g}, \quad T = \frac{2u}{g}$$
+        </div>
+        <div class="desc">
+            ব্যাখ্যা: <span class="v">H</span> = সর্বোচ্চ উচ্চতা, <span class="v">T</span> = শূন্যে থাকার মোট সময়।
+        </div>
+    </div>
+
+    <!-- অধ্যায় ৩ -->
+    <div class="chapter-header">৩. বল (Force)</div>
+
+    <div class="formula-card">
+        <span class="f-title">নিউটনের ২য় সূত্র ও ভরবেগ</span>
+        <div class="math-box">
+            $$F = ma, \quad p = mv$$
+        </div>
+    </div>
+
+    <div class="formula-card">
+        <span class="f-title">বলের ঘাত (Impulse)</span>
+        <div class="math-box">
+            $$J = Ft = m(v - u)$$
+        </div>
+        <div class="desc">
+            ব্যাখ্যা: বল ও সময়ের গুণফল বা ভরবেগের পরিবর্তন।
+        </div>
+    </div>
+
+    <div class="formula-card">
+        <span class="f-title">সংঘর্ষ: মিলিত বস্তুর বেগ</span>
+        <div class="math-box">
+            $$v = \frac{m_1u_1 + m_2u_2}{m_1 + m_2}$$
+        </div>
+        <div class="desc">
+            ব্যাখ্যা: সংঘর্ষের পর দুটি বস্তু একসাথে যুক্ত হয়ে চললে।
+        </div>
+    </div>
+
+    <div class="formula-card">
+        <span class="f-title">স্থিতিস্থাপক সংঘর্ষ: শেষ বেগ</span>
+        <div class="math-box">
+            $$v_1 = \frac{(m_1 - m_2)u_1 + 2m_2u_2}{m_1 + m_2}$$
+        </div>
+        <div class="desc">
+            ব্যাখ্যা: সংঘর্ষের পর ১ম বস্তুর আলাদা বেগ বের করার সূত্র।
+        </div>
+    </div>
+
+    <div class="formula-card">
+        <span class="f-title">ঘর্ষণ ও উচ্চতায় ত্বরণ</span>
+        <div class="math-box">
+            $$F - f_k = ma, \quad g' = g \left( \frac{R}{R + h} \right)^2$$
+        </div>
+        <div class="desc">
+            ব্যাখ্যা: <span class="v">fk</span> = ঘর্ষণ বল। <span class="v">g'</span> = h উচ্চতায় অভিকর্ষজ ত্বরণ।
+        </div>
+    </div>
+
+    <!-- অধ্যায় ৪ -->
+    <div class="chapter-header">৪. কাজ, ক্ষমতা ও শক্তি</div>
+
+    <div class="formula-card">
+        <span class="f-title">কাজ (Work)</span>
+        <div class="math-box">
+            $$W = Fs \cos\theta$$
+        </div>
+        <div class="desc">
+            ব্যাখ্যা: বল ও সরণ কোণ করে থাকলে। সোজা পথে হলে <span class="v">cosθ</span> বাদ যাবে।
+        </div>
+    </div>
+
+    <div class="formula-card">
+        <span class="f-title">শক্তি ও স্প্রিং</span>
+        <div class="math-box">
+            $$E_k = \frac{1}{2}mv^2, \quad U = \frac{1}{2}kx^2$$
+        </div>
+        <div class="desc">
+            ব্যাখ্যা: <span class="v">Ek</span> = গতিশক্তি। <span class="v">U</span> = স্প্রিংয়ের সঞ্চিত বিভব শক্তি।
+        </div>
+    </div>
+
+    <div class="formula-card">
+        <span class="f-title">ক্ষমতা ও কর্মদক্ষতা</span>
+        <div class="math-box">
+            $$P = Fv, \quad P = \frac{mgh}{t}$$
+            $$\eta = \frac{P_{out}}{P_{in}} \times 100\%$$
+        </div>
+    </div>
+
+    <!-- অধ্যায় ৭ -->
+    <div class="chapter-header">৭. তরঙ্গ ও শব্দ</div>
+
+    <div class="formula-card">
+        <span class="f-title">তরঙ্গ বেগ ও তাপমাত্রা</span>
+        <div class="math-box">
+            $$v = f\lambda, \quad v_2 = v_1 \sqrt{\frac{T_2}{T_1}}$$
+        </div>
+        <div class="desc">
+            ব্যাখ্যা: শব্দের বেগ তাপমাত্রার বর্গমূলের সমানুপাতিক।
+        </div>
+    </div>
+
+    <div class="formula-card">
+        <span class="f-title">তীব্রতা ও বিস্তার</span>
+        <div class="math-box">
+            $$I \propto A^2$$
+        </div>
+        <div class="desc">
+            ব্যাখ্যা: শব্দের তীব্রতা (<span class="v">I</span>) বিস্তারের (<span class="v">A</span>) বর্গের সমানুপাতিক।
+        </div>
+    </div>
+
+    <div class="formula-card">
+        <span class="f-title">প্রতিধ্বনি ও ঘড়ির সময়</span>
+        <div class="math-box">
+            $$2d = vt$$
+            $$t_{new} = \frac{86400 \times 2}{86400 \pm n}$$
+        </div>
+        <div class="desc">
+            ব্যাখ্যা: দোলক ঘড়ি দিনে <span class="v">n</span> সেকেন্ড ফাস্ট/স্লো হলে নতুন দোলনকাল।
+        </div>
+    </div>
+
+    <!-- অধ্যায় ৮ -->
+    <div class="chapter-header">৮. আলোর প্রতিফলন</div>
+
+    <div class="formula-card">
+        <span class="f-title">দর্পণের সমীকরণ</span>
+        <div class="math-box">
+            $$\frac{1}{u} + \frac{1}{v} = \frac{1}{f}$$
+        </div>
+        <div class="desc">
+            ব্যাখ্যা: <span class="v">f = r/2</span> (ফোকাস দূরত্ব বক্রতার ব্যাসার্ধের অর্ধেক)।
+        </div>
+    </div>
+
+    <div class="formula-card">
+        <span class="f-title">বিবর্ধন (Magnification)</span>
+        <div class="math-box">
+            $$m = \frac{l'}{l} = \left| \frac{v}{u} \right|$$
+        </div>
+    </div>
+
+    <!-- অধ্যায় ১০ -->
+    <div class="chapter-header">১০. স্থির বিদ্যুৎ</div>
+
+    <div class="formula-card">
+        <span class="f-title">তড়িৎ বল ও প্রাবল্য</span>
+        <div class="math-box">
+            $$F = C \frac{q_1 q_2}{r^2}, \quad F = qE$$
+        </div>
+        <div class="desc">
+            ব্যাখ্যা: <span class="v">E</span> = তড়িৎ প্রাবল্য। বল <span class="v">F</span> চার্জ ও প্রাবল্যের গুণফল।
+        </div>
+    </div>
+
+    <div class="formula-card">
+        <span class="f-title">ধারকত্ব ও সঞ্চিত শক্তি</span>
+        <div class="math-box">
+            $$C = \frac{Q}{V}, \quad C_{sphere} = \frac{r}{k}$$
+            $$U = \frac{1}{2}CV^2 = \frac{Q^2}{2C}$$
+        </div>
+        <div class="desc">
+            ব্যাখ্যা: <span class="v">U</span> হলো ধারকে সঞ্চিত শক্তি।
+        </div>
+    </div>
+
+    <!-- Special Footer -->
+    <footer>
+        <div class="maker-credit">
+            Made by: এমন একটা মানুষ যার কাছে <span class="highlight-name">Lazina</span> অনেক বেশি স্পেশাল <span class="heart-beat">❤️</span>
+        </div>
+    </footer>
+</div>
+
+</body>
+</html>
